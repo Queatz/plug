@@ -1,0 +1,56 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.fullscreen {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 1920px;
+    width: 1080px;
+}
+ 
+#term-check {
+    -webkit-animation-duration: 3s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+.notifications {
+    background-color: red;
+}
+
+.ad-container {
+    position: absolute;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: #9999FF;
+}

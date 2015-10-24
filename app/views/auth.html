@@ -1,0 +1,77 @@
+<div id=screen>
+  <div id=body>
+    <!--
+    <div>
+      <div class="plugContainer" style="height:600px;">
+	<div class="plugCenter">
+	  <span class="plugtext" style="font-size:130px;letter-spacing: 4px;">Charge</span><br/>
+	  <span class="plugtext" style="font-size:60px;letter-spacing: 2px;display: block;margin-bottom: -30px;">your phone for</span><br/>
+	  <span class="plugtext" style="font-size:170px;font-weight:bold;letter-spacing: 10px;">FREE</span>
+	</div>
+      </div>
+
+      <div ng-show="numberOfTries>=1">
+        <div ng-show="numberOfTries<3">
+          <h2 class="plug-errortext"> Sorry, we didn't manage to read your card.<br/>
+            Please make sure your card is oriented as shown in the icon below.</h2>
+        </div>
+
+        <div ng-show="numberOfTries>=3">
+          <h1>Sorry</h1>
+          <h2>We are unable to read your card.</h2>
+          <h3>Please contact customer service.</h3>
+        </div>
+      </div>
+
+      <div ng-show="numberOfTries<3">
+        <div class="plugContainer plugHow">
+	  <div class="plugCenter">
+	    <img class="plugHowIcon" src="image/credit.png">
+	    <div class="plugHowText ">
+	      <div class="plugHowTextLg">Swipe your card</div>
+	      <div class="plugHowTextMd">To open a chamber, or retrieve your phone.</div>
+	      <div class="plugHowTextSm">You won't be charged.</div>
+	    </div>
+	  </div>
+        </div>
+
+        <div class="plugContainer plugHow">
+	  <div class="plugCenter grey">
+	    <img class="plugHowIcon" src="image/dropoff-no.png">
+	    <div class="plugHowText">
+	      <div class="plugHowTextLg">Drop off your phone</div>
+	      <div class="plugHowTextMd">Connect it to the appropriate cable.</div>
+	      <div class="plugHowTextSm">And close the door.</div>
+	    </div>
+	  </div>
+        </div>
+
+        <div class="plugContainer plugHow">
+	  <div class="plugCenter grey">
+	    <img class="plugHowIcon" src="image/pickup-no.png">
+	    <div class="plugHowText">
+	      <div class="plugHowTextLg">Retrieve your phone</div>
+	      <div class="plugHowTextMd">It's ready to go!</div>
+	      <div class="plugHowTextSm">Thank you for using PLUG</div>
+	    </div>
+	  </div>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+    <div ng-show=true>
+      <p> This is a debuggin feature </p>
+      <form novalidate class="simple-form">
+        Credentials: <input type="text" ng-model="user.cred" /><br />
+        <input type="submit" ng-click="nextAction(user)" value="Save" />
+      </form>
+
+      <h2> USER INFO: DEBUG </h2>
+      <p> USER CRED: {{cred}} </p>
+    </div>
+
+  <div class=footer>
+    <button class="cancel-button plugButton" ng-click="cancel()">Cancel</button>
+  </div>
+</div>
